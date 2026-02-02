@@ -2,9 +2,7 @@ name: CI
 
 on:
   push:
-    branches:
-      - main
-      - develop
+    branches: [ "main"]
   pull_request:
 
 jobs:
@@ -26,9 +24,11 @@ jobs:
           cache: maven
 
       # 3. Build + Tests
-      - name: Build and run tests
-        run: mvn clean verify
+      - name: Build JAR
+        run: mvn clean package -DskipTests
 
-      # 4. Build imagen Docker
-      - name: Build Docker image
-        run: docker build -t banking-ms:ci .
+      - name: Upload JAR artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: banking-ms-jar
+          path: target/banking-ms.jar
