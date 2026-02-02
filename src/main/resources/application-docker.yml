@@ -5,7 +5,11 @@ spring:
     password: 654321
   jpa:
     hibernate:
-      ddl-auto: validate
+      ddl-auto: none
+    open-in-view: false
+  autoconfigure:
+    exclude:
+      - org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
 
 management:
   endpoints:
