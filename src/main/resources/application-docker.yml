@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://postgres:5432/banking_db
+    username: postgres
+    password: 654321
+  jpa:
+    hibernate:
+      ddl-auto: validate
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,metrics,prometheus

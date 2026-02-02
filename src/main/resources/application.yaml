@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: banking-ms
+  profiles:
+    active: local
+  kafka:
+    enabled: false
+    bootstrap-servers: localhost:9092
+    consumer:
+      group-id: banking-ms
+      auto-offset-reset: earliest
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+
+server:
+  port: 8080
+
+security:
+  jwt:
+    secret: very-secret-key-change-me
+    expiration: 3600000
+

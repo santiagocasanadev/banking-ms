@@ -1,0 +1,57 @@
+<code_scheme name="Intellij Modern Java Style" version="173">
+    <JavaCodeStyleSettings>
+        <!-- Importaciones -->
+        <option name="CLASS_COUNT_TO_USE_IMPORT_ON_DEMAND" value="999" />
+        <option name="NAMES_COUNT_TO_USE_IMPORT_ON_DEMAND" value="999" />
+
+        <!-- Alineación y envoltura moderna -->
+        <option name="ALIGN_MULTILINE_PARAMETERS" value="true" />
+        <option name="ALIGN_MULTILINE_PARAMETERS_IN_CALLS" value="true" />
+        <option name="ALIGN_MULTILINE_BINARY_OPERATION" value="true" />
+        <option name="ALIGN_MULTILINE_TERNARY_OPERATION" value="true" />
+        <option name="ALIGN_MULTILINE_ASSIGNMENT" value="true" />
+        <option name="ALIGN_MULTILINE_FOR" value="true" />
+        <option name="ALIGN_MULTILINE_ARRAY_INITIALIZER_EXPRESSION" value="true" />
+
+        <!-- Wrap solo si excede margen -->
+        <option name="METHOD_PARAMETERS_WRAP" value="2" />
+        <option name="CALL_PARAMETERS_WRAP" value="2" />
+        <option name="BINARY_OPERATION_WRAP" value="2" />
+        <option name="TERNARY_OPERATION_WRAP" value="2" />
+        <option name="ASSIGNMENT_WRAP" value="2" />
+
+        <!-- Otros -->
+        <option name="KEEP_LINE_BREAKS" value="true" />
+        <option name="ALIGN_GROUP_FIELD_DECLARATIONS" value="true" />
+        <option name="KEEP_CONTROL_STATEMENT_IN_ONE_LINE" value="true" />
+    </JavaCodeStyleSettings>
+
+    <codeStyleSettings language="JAVA">
+        <!-- Márgenes e indentación -->
+        <option name="RIGHT_MARGIN" value="120" />
+        <option name="INDENT_SIZE" value="4" />
+        <option name="CONTINUATION_INDENT_SIZE" value="8" />
+        <option name="TAB_SIZE" value="4" />
+
+        <!-- Líneas en blanco -->
+        <option name="BLANK_LINES_AFTER_CLASS_HEADER" value="1" />
+        <option name="BLANK_LINES_BEFORE_CLASS_END" value="1" />
+        <option name="BLANK_LINES_AROUND_FIELD" value="0" />
+        <option name="KEEP_BLANK_LINES_IN_DECLARATIONS" value="0" />
+
+        <!-- Espacios -->
+        <option name="SPACE_AFTER_COMMA" value="true" />
+        <option name="SPACE_AROUND_ASSIGNMENT_OPERATORS" value="true" />
+        <option name="SPACE_AROUND_LOGICAL_OPERATORS" value="true" />
+        <option name="SPACE_AROUND_RELATIONAL_OPERATORS" value="true" />
+        <option name="SPACE_WITHIN_METHOD_CALL_PARENTHESES" value="false" />
+        <option name="SPACE_WITHIN_METHOD_PARENTHESES" value="false" />
+
+        <!-- Estilo moderno -->
+        <option name="KEEP_LINE_BREAKS" value="true" />
+        <option name="ALIGN_MULTILINE_METHOD_BRACKETS" value="true" />
+        <option name="ALIGN_MULTILINE_FOR" value="true" />
+        <option name="ALIGN_MULTILINE_BINARY_OPERATION" value="true" />
+        <option name="WRAP_LONG_LINES" value="true" />
+    </codeStyleSettings>
+</code_scheme>
