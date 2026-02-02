@@ -2,7 +2,8 @@ name: CI
 
 on:
   push:
-    branches: [ "main"]
+    branches:
+      - main
   pull_request:
 
 jobs:
@@ -21,7 +22,6 @@ jobs:
         with:
           distribution: temurin
           java-version: 17
-          cache: maven
 
       # 3. Build + Tests
       - name: Build JAR
